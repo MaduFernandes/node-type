@@ -1,7 +1,7 @@
 import Knex from 'knex';
 
 export async function up(knex: Knex){
-    return knex.schema.createSchema('cadastral').createTable('products', table => {
+    return knex.schema.createTable('products', table => {
         table.increments('id_products').primary();
         table.string('name').notNullable();
         table.double('price').notNullable();
