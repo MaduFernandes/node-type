@@ -10,10 +10,13 @@
     "suppressImplicitAnyIndexErrors": true,
     "esModuleInterop": true,
     "types": [
-      "node"
+      "node",
+      "jest"
     ]
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "coverage",
+    "**/__tests__"
   ]
 }
