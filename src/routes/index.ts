@@ -1,9 +1,9 @@
 import { Router } from 'express'
+// @ts-ignore
+import productsRouter from './products.routes.ts'
 
 const routes = Router();
 
-routes.get('/', (req, res) => {
-    return res.send("Hello World")
-})
+routes.use('/', productsRouter);
 
 export default routes;
