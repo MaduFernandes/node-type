@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
+    "target": "ES2016",
     "sourceMap": true,
     "strictNullChecks": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "esModuleInterop": true,
     "types": [
       "node"
     ]
