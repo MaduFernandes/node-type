@@ -1,4 +1,4 @@
-# Welcome to Study TypeScript 👋
+# Welcome to Study TypeScript and Jest 👋
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](#)
 
@@ -12,8 +12,30 @@ npm install
 
 ## Usage
 
+Run migrations:
+
 ```sh
 npm run knex:migrate
+```
+
+Run seed:
+
+```sh
+npm run knex:seed
+```
+
+Run the application:
+
+```sh
+npm run dev
+```
+
+## Tests
+
+Run the tests:
+
+```sh
+npm run jest
 ```
 
 ## Author
