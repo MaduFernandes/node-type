@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  postgres:
+    container_name: study-type
+    image: postgres:12.3
+    environment: 
+      POSTGRES_PASSWORD: "root"
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./.docker/data/postgres:/data/postgres
+    env_file:
+      - .env

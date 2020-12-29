@@ -1,22 +1,15 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES2016",
-    "sourceMap": true,
-    "strictNullChecks": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "allowSyntheticDefaultImports": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "esModuleInterop": true,
-    "types": [
-      "node",
-      "jest"
-    ]
-  },
-  "exclude": [
-    "node_modules",
-    "coverage",
-    "**/__tests__"
-  ]
+   "compilerOptions": {
+      "lib": [
+         "es5",
+         "es6"
+      ],
+      "target": "es5",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "./build",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true
+   }
 }
